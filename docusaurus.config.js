@@ -52,6 +52,17 @@ const config = {
       }),
     ],
   ],
+plugins: [
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        hashed: true,
+        indexDocs: true,
+        indexBlog: true,
+        highlightSearchTermsOnTargetPage: true,
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -128,4 +139,3 @@ const config = {
 };
 
 module.exports = config;
-
